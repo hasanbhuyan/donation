@@ -14,7 +14,7 @@
    <!-- navbar start  -->
     <nav class="bg-orange-50 bg-opacity-70 py-12">
       <div class="relative">
-        <div class=" container flex justify-between mx-auto px-10 lg:px-5 py-5 rounded-md fixed top-0 left-0 right-0 bg-orange-50">
+        <div class=" container flex justify-between mx-auto px-10 lg:px-5 py-5 rounded-md fixed top-0 left-0 right-0 bg-orange-50 bg-opacity-60 backdrop-filter backdrop-blur-lg">
           <!-- blog button  -->
           <button id="btn-blog" class="py-3 px-8 text-xl font-semibold bg-lime-400 rounded-md hidden lg:block">Blog</button>
           <div class="flex gap-3 items-center">
@@ -37,7 +37,7 @@
         </a>
         <!-- donation and history button  -->
         <div class="flex gap-5 mt-20 mb-10 justify-center">
-          <button id="btn-donation" class="border  border-slate-300 text-lg font-semibold rounded-md px-8 py-3 hover:bg-lime-400 transition-all">Donation</button>
+          <button id="btn-donation" class="border  border-slate-300 text-lg font-semibold rounded-md px-8 py-3 bg-lime-400 hover:bg-lime-400 transition-all">Donation</button>
           <button id="btn-history" class="border border-slate-300 text-lg font-semibold rounded-md px-8 py-3 hover:bg-lime-400 transition-all">History</button>
         </div> 
         <section id="donation-section">
@@ -54,7 +54,7 @@
               </p>
               </div>
               <div class="flex flex-col items-center">
-                <input id="input-noakhali" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                <input id="input-noakhali" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                 <!-- modal -->
                 <button id="donate-noakhali" class="btn bg-lime-400 font-semibold text-xl mt-5">Donate Now</button>
                 <div class="lg:w-20">
@@ -91,19 +91,21 @@
               <div class="flex flex-col items-center">
                 <input id="input-feni" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                 <button id="donate-feni" class="btn bg-lime-400 font-semibold text-xl mt-5">Donate Now</button>
-                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                  <div class="modal-box flex flex-col items-center">
-                    <img class="py-3" src="assets/coin.png" alt="">
-                    <h3 class="text-3xl font-bold">Congrates!</h3>
-                    <p class="py-4">You Have Donated for Humaniknd</p>
-                    <h3 class="text-lg font-bold">SuccessFully</h3>
-                    <div class="modal-action">
-                      <form method="dialog">
-                        <button class="btn mx-auto">Close Confirmation</button>
-                      </form>
+                <div class="lg:w-20">
+                  <dialog id="my_modal_5" class="modal">
+                    <div class="modal-box flex flex-col items-center">
+                      <img class="py-3" src="assets/coin.png" alt="">
+                      <h3 class="text-3xl font-bold">Congrates!</h3>
+                      <p class="py-4">You Have Donated for Humaniknd</p>
+                      <h3 class="text-lg font-bold">SuccessFully</h3>
+                      <div class="modal-action">
+                        <form method="dialog">
+                          <button class="btn mx-auto">Close Confirmation</button>
+                        </form>
+                      </div>
                     </div>
-                  </div>
-                </dialog>
+                  </dialog>
+                </div>
               </div>
             </div>
           </div>
@@ -123,19 +125,21 @@
               <div class="flex flex-col items-center">
                 <input id="input-quota-protest" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                 <button id="donate-quota-protest" class="btn bg-lime-400 font-semibold text-xl mt-5">Donate Now</button>
-                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                  <div class="modal-box flex flex-col items-center">
-                    <img class="py-3" src="assets/coin.png" alt="">
-                    <h3 class="text-3xl font-bold">Congrates!</h3>
-                    <p class="py-4">You Have Donated for Humaniknd</p>
-                    <h3 class="text-lg font-bold">SuccessFully</h3>
-                    <div class="modal-action">
-                      <form method="dialog">
-                        <button class="btn mx-auto">Close Confirmation</button>
-                      </form>
+                <div class="lg:w-20">
+                  <dialog id="my_modal_5" class="modal">
+                    <div class="modal-box flex flex-col items-center">
+                      <img class="py-3" src="assets/coin.png" alt="">
+                      <h3 class="text-3xl font-bold">Congrates!</h3>
+                      <p class="py-4">You Have Donated for Humaniknd</p>
+                      <h3 class="text-lg font-bold">SuccessFully</h3>
+                      <div class="modal-action">
+                        <form method="dialog">
+                          <button class="btn mx-auto">Close Confirmation</button>
+                        </form>
+                      </div>
                     </div>
-                  </div>
-                </dialog>
+                  </dialog>
+                </div>
               </div>
             </div>
           </div>
