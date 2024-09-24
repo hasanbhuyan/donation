@@ -11,7 +11,6 @@ function strToNumber(str){
     return floatingNumber;
 }
 
-
 function donationValue(donationInput, newAmountId,donationPlace){
    const previousDonationStr = document.getElementById(newAmountId);
    const totalAmountStr = document.getElementById('total-amount');
@@ -19,7 +18,7 @@ function donationValue(donationInput, newAmountId,donationPlace){
    const newDonation = parseFloat(newDonationStr)
    const previousDonation = strToNumber(previousDonationStr)
    const totalAmount = strToNumber (totalAmountStr)
-   
+
     if(typeof newDonation === 'number' && newDonation > 0 && totalAmount > 0 ){
         document.getElementById('my_modal_5').showModal()
         previousDonationStr.innerText = previousDonation + newDonation;
