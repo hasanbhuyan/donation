@@ -17,7 +17,6 @@ function donationValue(donationInput, newAmountId,donationPlace){
    const totalAmountStr = document.getElementById('total-amount');
    const newDonationStr = document.getElementById(donationInput).value;
    const newDonation = parseFloat(newDonationStr)
-
    const previousDonation = strToNumber(previousDonationStr)
    const totalAmount = strToNumber (totalAmountStr)
    
@@ -33,20 +32,12 @@ function donationValue(donationInput, newAmountId,donationPlace){
         <p>Date: ${currentDate}</p>
         </div>`;
         donateHistory.appendChild(div)
-
-        // donateHistory.appendChild(h1);
     }
-
     else{
         return alert('Sorry! You cannot donate here')
     }
 }
 
-// function getId(iD){
-//     document.getElementById(iD).addEventListener('click',function(){
-
-//     })
-// }
 document.getElementById('donate-noakhali').addEventListener('click',function(){
     donationValue('input-noakhali','amount-noakhali','Noakhali')
 })
