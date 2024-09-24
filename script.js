@@ -41,6 +41,12 @@ function donationValue(donationInput, newAmountId,donationPlace){
         return alert('Sorry! You cannot donate here')
     }
 }
+
+// function getId(iD){
+//     document.getElementById(iD).addEventListener('click',function(){
+
+//     })
+// }
 document.getElementById('donate-noakhali').addEventListener('click',function(){
     donationValue('input-noakhali','amount-noakhali','Noakhali')
 })
