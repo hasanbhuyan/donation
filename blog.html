@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header start  -->
+    <header class="bg-orange-50 bg-opacity-70 pt-10 pb-14">
+             <!-- navbar start  -->
+              <nav class=" container flex justify-between mx-auto">
+                <button id="btn-blog" class="w-32 text-xl font-semibold bg-lime-400 rounded-md">Blog</button>
+                <div class="flex gap-3 items-center">
+                    <img src="assets/logo.png" alt="">
+                     <h2 class="font-semibold text-xl">Donate Bangladesh</h2>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <img src="assets/coin.png" alt="">
+                    <h3 class="text-xl font-medium text-slate-500"><span>50500</span> BDT</h3>
+                </div>
+              </nav>
+             <!-- navbar end  -->     
+    </header>
+    <!-- header end -->
+     <main class="container mx-auto">
+       <section class="mt-10">
+        <h1 class="font-extrabold text-4xl pb-5">Impotant FAQ</h1>
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content">
+                <p> Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-content">
+                <ol class="list-decimal px-3">
+                  <li>Using getElementById: The getElementById method allows you to select an element by its ID</li>
+                  <li>Using getElementsByClassName</li>
+                  <li>Using getElementsByTagName</li>
+                  <li>Using querySelector</li>
+                  <li>Using querySelectorAl</li>
+                  <li>Changing the Text Content</li>
+                  <li>Changing the HTML Content</li>
+                  <li>Changing the Attribute Value</li>
+                </ol>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is event delegation in the contex of the DOM,and why is it useful?</div>
+              <div class="collapse-content">
+                <p>Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+              <div class="collapse-content">
+                <div>
+                  <h1 class="text-lg font-bold">1. Manipulating Attributes</h1>
+                  <ol class="list-disc ps-5">
+                    <li>getAttribute(): Retrieves the value of a specified attribute.</li>
+                    <li>setAttribute(): Sets the value of a specified attribute.</li>
+                    <li>removeAttribute(): Removes an attribute from an element.</li>
+                  </ol>
+                </div>
+                <div>
+                  <h1 class="text-lg font-bold">2. Manipulating Styles</h1>
+                  <ol class="list-disc ps-5">
+                    <li>element.style.property: Directly sets an individual CSS property.</li>
+                    <li>element.classList: Adds, removes, or toggles CSS classes for styling.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+       </section>
+</body>
+</html>
