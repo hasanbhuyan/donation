@@ -10,7 +10,6 @@ function strToNumber(str){
     const floatingNumber = parseFloat(strValue);
     return floatingNumber;
 }
-
 function donationValue(donationInput, newAmountId,donationPlace){
    const previousDonationStr = document.getElementById(newAmountId);
    const totalAmountStr = document.getElementById('total-amount');
@@ -48,10 +47,14 @@ document.getElementById('donate-quota-protest').addEventListener('click',functio
 })
 const donationButton = document.getElementById('btn-donation').addEventListener('click',function(){
     document.getElementById('donation-section').classList.remove('hidden')
-    document.getElementById('history-section').classList.add('hidden')   
+    document.getElementById('history-section').classList.add('hidden')
+    document.getElementById('btn-donation').classList.add('bg-lime-400')   
+    document.getElementById('btn-history').classList.remove('bg-lime-400')   
 })
 const historyButton =  document.getElementById('btn-history').addEventListener('click',function(){
     document.getElementById('history-section').classList.remove('hidden')
     document.getElementById('donation-section').classList.add('hidden')
+    document.getElementById('btn-history').classList.add('bg-lime-400')   
+    document.getElementById('btn-donation').classList.remove('bg-lime-400')
     
 })
