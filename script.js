@@ -3,17 +3,34 @@ function donationPage(btnID , fileName){
         window.location.href = fileName;
     })
 }
+function strToNumber(str){
+    const strValue = str.innerText;
+    const floatingNumber = parseFloat(strValue);
+    return floatingNumber;
+}
 donationPage('btn-donation','/index.html')
 donationPage('btn-history' ,'/history.html')
 
 function donationValue(donationInput, newAmountId){
+   const previousDonationStr = document.getElementById(newAmountId);
+   const totalAmountStr = document.getElementById('total-amount');
    const newDonationStr = document.getElementById(donationInput).value;
    const newDonation = parseFloat(newDonationStr)
-   const newDonateAmount = document.getElementById(newAmountId);
-   newDonateAmount.innerText = newDonation;
-   const previousTotalStr = document.getElementById('total-amount').innerText;
-   const previousTotal = parseFloat(previousTotalStr)
-   console.log(newDonation , newDonation,previousTotal)
+   
+   const previousDonation = strToNumber(previousDonationStr)
+   const totalAmount = strToNumber (totalAmountStr)
+   console.log(previousDonation,newDonation,totalAmount)
+   
+    if(typeof newDonation === 'number' && newDonation > 0 && totalAmount > 0 ){
+        previousDonationStr.innerText = previousDonation + newDonation;
+        const currentAmount = totalAmount - newDonation;
+        totalAmountStr.innerText = currentAmount;
+        console.log(currentAmount);
+    }
+
+    else{
+        return alert('Sorry! You cannot donate here')
+    }
 }
 document.getElementById('donate-noakhali').addEventListener('click',function(){
     donationValue('input-noakhali','amount-noakhali')
